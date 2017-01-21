@@ -22,7 +22,7 @@ public class Spectrum : MonoBehaviour {
         float c3 = samples[22] + samples[23] + samples[24];
         float c4 = samples[44] + samples[45] + samples[46] + samples[47] + samples[48] + samples[49];
 
-        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
+        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Wave");
 
         for (int i = 0; i < cubes.Length; i++)
         {
