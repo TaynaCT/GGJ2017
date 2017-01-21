@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public Transform mainMenu, settings, credits, howToPlay;
+
     //Escolher a cena a carregar
     public void LoadScene(string name)
     {
-        Application.LoadLevel(name);
-        //SceneManager.LoadScene(name);
-        
+        SceneManager.LoadScene(name);
     }
 
     public void SettingsMenu(bool clicked)
