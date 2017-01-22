@@ -17,9 +17,7 @@ public class Spectrum : MonoBehaviour
     void Start()
     {
         timer = 0;
-        audio = GetComponent<AudioSource>();
-
-        wave = (GameObject)Instantiate(waveObj, new Vector3(2f, .0f, 4), Quaternion.identity);
+        audio = GetComponent<AudioSource>();              
     }
 
     // Update is called once per frame

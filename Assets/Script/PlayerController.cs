@@ -23,11 +23,12 @@ public class PlayerController : MonoBehaviour {
 
      void OnTriggerEnter(Collider other)
     {
+        Debug.Log("djsk");
         if (other.gameObject.tag == "Wave")
-        {           
+        {
             gameObject.transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
             Debug.Log(gameObject.transform.localScale);
-            
+
         }
     }
 }
