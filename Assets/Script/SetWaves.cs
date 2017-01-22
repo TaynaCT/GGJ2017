@@ -11,12 +11,13 @@ public class SetWaves : MonoBehaviour
     public List<GameObject> waves = new List<GameObject>();
     int waveCount = 0;
     int lastI = -1;
-    // Use this for initialization
+    int selectTexture = 0;
+    
     void Start()
     {
         InvokeRepeating("MakeWaves", 1, 2);
-        StartCoroutine(wait());
-        
+        InvokeRepeating("MakeWaves", 1, 2);
+        StartCoroutine(wait());       
     } 
     
 
@@ -43,11 +44,21 @@ public class SetWaves : MonoBehaviour
     void MakeWaves()
     {
         GameObject tempWave = (GameObject)Instantiate(wavePrefab, RandPos(), Quaternion.identity);
-        tempWave.transform.eulerAngles = new Vector3(-90, 0, -180);
+        tempWave.transform.eulerAngles = new Vector3(-90, 0, -180);        
         tempWave.name = "Wave" + waveCount;
         waves.Add(tempWave);
-        waveCount++;
-                
+        waveCount++;                
+    }
+
+    void AlternateTexture()
+    {
+        foreach(GameObject wave in waves)
+            wave.GetComponent<Renderer>().material.mainTexture = waveText[selectTexture];
+
+        selectTexture++;
+
+        if (selectTexture >= 7)
+            selectTexture = 0;
     }
 
     IEnumerator wait()
@@ -62,7 +73,7 @@ public class SetWaves : MonoBehaviour
                 {
                     if (waves[i] != null)
                     {
-                        waves[i].transform.position -= new Vector3(0, 0, Spectrum.freqBand[randFreq] * speed);
+                        waves[i].transform.position -= new Vector3(0, 0, Spectrum.freqBand[randFreq] * speed);                       
                     }
                 }
             }
