@@ -406,7 +406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: -3}
+  m_AnchoredPosition: {x: -11, y: -105}
   m_SizeDelta: {x: 394, y: 263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187253335
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Text: 'How to play
 
 
-    Use the arrows to move the dancer and try to avoid the waves.'
+    Use the left and right arrows to move the dancer and dodge the waves.'
 --- !u!222 &187253336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1421,7 +1421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275309628
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1702,7 +1702,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1275309628}
-  settings: {fileID: 0}
   credits: {fileID: 1617738709}
   howToPlay: {fileID: 1753224884}
 --- !u!4 &1616862831
@@ -1986,7 +1985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1753224884
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2333,7 +2332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -240}
+  m_AnchoredPosition: {x: -13, y: -240}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093206818
