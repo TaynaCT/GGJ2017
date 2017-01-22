@@ -5,6 +5,7 @@ using UnityEngine;
 public class SetWaves : MonoBehaviour {
 
     public GameObject wavePrefab;
+    public float speed;
     GameObject[] waves = new GameObject[20];
 
     float timer;

@@ -652,7 +652,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4c0549ce7c4778041a9b353e7a5794a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -992,7 +992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a24a10934966a94f8354370d1934590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wavePrefab: {fileID: 1000013310850582, guid: 2389496d688cc5847a2b77a8d824e47f, type: 2}
+  wavePrefab: {fileID: 1198293892493098, guid: ace95cb5e2db75849ab1a78fcefcc3b3, type: 2}
+  speed: 0
 --- !u!1001 &2133256308
 Prefab:
   m_ObjectHideFlags: 0
