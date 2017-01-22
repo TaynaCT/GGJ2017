@@ -8,6 +8,7 @@ public class DestroyWave : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
     {
+        Debug.Log("whaaaa");
         if(col.gameObject.tag == "Wave")
         {
             setWave.waves.Remove(col.gameObject);

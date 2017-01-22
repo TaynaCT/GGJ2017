@@ -25,10 +25,10 @@ public class SetWaves : MonoBehaviour
         int i = -1;
         Vector3[] pos = new Vector3[4];
 
-        pos[0] = new Vector3(39.5f, 0, 1.9f);
-        pos[1] = new Vector3(12.6f, 0, 1.9f);
-        pos[2] = new Vector3(-14.3f, 0, 1.9f);
-        pos[3] = new Vector3(-40.3f, 0, 1.9f);
+        pos[0] = new Vector3(9f, -1, 1.9f);
+        pos[1] = new Vector3(5.6f, -1, 1.9f);
+        pos[2] = new Vector3(-6f, -1, 1.9f);
+        pos[3] = new Vector3(-9f, -1, 1.9f);
 
         do
         {
@@ -52,7 +52,7 @@ public class SetWaves : MonoBehaviour
 
     IEnumerator wait()
     {
-        int randFreq = Random.Range(0, 7);
+        int randFreq = Random.Range(0, 4);
 
         while (true)
         {

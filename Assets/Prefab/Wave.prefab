@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4082346889415262}
   - component: {fileID: 33540902926972726}
   - component: {fileID: 23188882104035304}
-  - component: {fileID: 65209103103287220}
+  - component: {fileID: 65795121492558446}
   m_Layer: 0
   m_Name: Wave
   m_TagString: Wave
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1198293892493098}
   m_LocalRotation: {x: -0.010785886, y: -0.7070245, z: -0.7070245, w: 0.010785886}
-  m_LocalPosition: {x: 0.641, y: -0.5, z: -22.49}
+  m_LocalPosition: {x: 19.657394, y: 23.055351, z: -96.21622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1198293892493098}
   m_Mesh: {fileID: 4300000, guid: 9548378876e1e8049b4eab8c34d66f60, type: 3}
---- !u!65 &65209103103287220
+--- !u!65 &65795121492558446
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -90,5 +90,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.025099823, y: 0.0000000026039877, z: 0.01253304}
-  m_Center: {x: 0, y: -9.793582e-10, z: 0.00626652}
+  m_Size: {x: 12.549913, y: 0.000001301994, z: 6.26652}
+  m_Center: {x: 0, y: -0.0000004896791, z: 3.13326}
