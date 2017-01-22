@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 65000012421003884}
   - component: {fileID: 23000011857141466}
   - component: {fileID: 54000012395577556}
-  - component: {fileID: 114502672672164206}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Wave
@@ -109,14 +108,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114502672672164206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013310850582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a472b2b3053773b49a2fe1402e39b589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

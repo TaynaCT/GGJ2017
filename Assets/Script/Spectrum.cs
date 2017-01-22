@@ -32,30 +32,26 @@ public class Spectrum : MonoBehaviour
         float c3 = samples[22] + samples[23] + samples[24];
         float c4 = samples[44] + samples[45] + samples[46] + samples[47] + samples[48] + samples[49];
 
-        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Wave");
+        GameObject[] waves = GameObject.FindGameObjectsWithTag("Wave");
 
-        for (int i = 0; i < cubes.Length; i++)
+        for (int i = 0; i < waves.Length; i++)
         {
-            switch (cubes[i].name)
+            switch (waves[i].name)
             {
-                case "c1":
-                    cubes[i].SetActive(true);
-                    cubes[i].transform.localPosition += new Vector3(0, 0, -c1);
+                case "c1":                    
+                    waves[i].transform.localPosition += new Vector3(0, 0, -c1);
                     break;
 
-                case "c2":
-                    cubes[i].SetActive(true);
-                    cubes[i].transform.localPosition += new Vector3(0, 0, -c2);
+                case "c2":                    
+                    waves[i].transform.localPosition += new Vector3(0, 0, -c2);
                     break;
 
-                case "c3":
-                    cubes[i].SetActive(true);
-                    cubes[i].transform.localPosition += new Vector3(0, 0, -c3);
+                case "c3":                    
+                    waves[i].transform.localPosition += new Vector3(0, 0, -c3);
                     break;
 
-                case "c4":
-                    cubes[i].SetActive(true);
-                    cubes[i].transform.localPosition += new Vector3(0, 0, -c4);
+                case "c4":                    
+                    waves[i].transform.localPosition += new Vector3(0, 0, -c4);
                     break;
 
             }
@@ -81,27 +77,13 @@ public class Spectrum : MonoBehaviour
             }          
             
         }
-        StartCoroutine(SincToAudio());
-
-
+        
     }
 
     void GetSpectrumAudioSource()
     {
         audio.GetSpectrumData(samples, 0, FFTWindow.Hamming);      
           
-    }
-
-
-    IEnumerator SincToAudio()
-    {
-        for (int k = 1; k < samples.Length; k++)
-        {         
-             // find the sample number equivalent to time_s[k]:
-            int nSample =(int)( samples[k] * audio.clip.frequency);
-            while (audio.timeSamples < nSample) yield return 0; // wait till the desired sample
-          wave = Instantiate(waveObj, new Vector3(-2.21f, 0, 1.9f), Quaternion.identity);
-        }
     }
 
 }
